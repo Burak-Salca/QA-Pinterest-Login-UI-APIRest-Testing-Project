@@ -11,7 +11,7 @@ public class LoginTests extends BaseTest {
     LoginPage loginpage = new LoginPage();
     MainPage mainPage = new MainPage();
 
-    @Test
+    @Test(description = "Başarılı giriş kontrolü")
     public void TC01() throws InterruptedException{
         loginpage.fillEmail(email)
                 .fillPassword(password)
@@ -20,7 +20,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(mainPage.getAccountValue(),"S");
     }
 
-    @Test
+    @Test(description = "Yanlış email formatında griş kontrolü")
     public void TC02() throws InterruptedException{
         loginpage.fillEmail("siyah.0699qhotmail.com")
                 .fillPassword(password)
@@ -32,7 +32,7 @@ public class LoginTests extends BaseTest {
         }
     }
 
-    @Test
+    @Test(description = "Yanlış email ile giriş kontrolü")
     public void TC03() throws InterruptedException{
         loginpage.fillEmail("siyah.9999@hotmail.com")
                 .fillPassword(password)
@@ -41,7 +41,7 @@ public class LoginTests extends BaseTest {
        loginpage.emailErrorController("Girdiğiniz e-posta hiçbir hesaba ait değil.");
     }
 
-    @Test
+    @Test(description = "Yanlış password ile giriş kontrolü")
     public void TC04() throws InterruptedException{
         loginpage.fillEmail(email)
                 .fillPassword("0000000000000000000000000000000000000000000000")

@@ -7,15 +7,13 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest extends BaseLibrary{
 
-    public static WebDriver driver;
-
-    @BeforeMethod
+    @BeforeMethod(description = "Web sayfası açıldı")
     public void openBrowser(){
         driver = new ChromeDriver();
         driver.get(url);
     }
 
-    @AfterMethod
+    @AfterMethod(description = "Web sayfası kapandı")
     public void closeBrowser(){
         driver.quit();
     }
