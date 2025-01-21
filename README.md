@@ -66,8 +66,9 @@ Bu proje, Pinterest web sitesinin login arayüzünü test etmek amacıyla geliş
 
 ## 📊 Test Raporu Sonuçları
 - Proje kapsamında gerçekleştirilen testlerin sonuçları Allure Report kullanılarak görselleştirilmiştir.
+- Test sonuçlarına burdan uluşabilirsiniz --> [Test Sonuçları](https://qa-pinterest-login-ui-api-rest-testing-project.vercel.app/#) 
   - ✅ Geçen Testler: 10
   - ❌ Başarısız Testler: 0
-  - ⚠️ Atlanan Testler: 1
+  - ⚠️ Atlanan Testler: 2
   - ⏱️ Toplam Süre: 2 dakika 53 saniye
 
